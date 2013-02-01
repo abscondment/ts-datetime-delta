@@ -1,7 +1,7 @@
 namespace :thinking_sphinx do
   namespace :index do
     desc "Index Thinking Sphinx datetime delta indices"
-    task :delta => :app_env do
+    task :delta => :environment do
       ThinkingSphinx::Deltas::DatetimeDelta.index
     end
   end
